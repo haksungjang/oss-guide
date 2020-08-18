@@ -10,7 +10,7 @@
       
       
       
-      <link rel="shortcut icon" href="assets/favicon.png">
+      <link rel="shortcut icon" href="assets/favicon-sk.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
     
     
@@ -26,30 +26,62 @@
       
         
         
-        <meta name="theme-color" content="#4051b5">
+        <meta name="theme-color" content="#000000">
       
     
     
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,400,400i,700%7CNanum+Gothic+Coding&display=fallback">
+        <style>body,input{font-family:"Nanum Gothic",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Nanum Gothic Coding",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
     
     
     
     
+  
       
     
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.addEventListener("click", ev => {
+        if (ev.target instanceof HTMLElement) {
+          var el = ev.target.closest("a[href^=http]")
+          if (el)
+            ga("send", "event", "outbound", "click", el.href)
+        }
+      })
+    })
+  </script>
+
     
+  
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Open Source Guide">
+  <meta property="og:description" content="None">
+  <meta property="og:url" content="None">
+  <meta property="og:image" content="assets/images/banner.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@squidfunk">
+  <meta name="twitter:creator" content="@squidfunk">
+  <meta name="twitter:title" content="Open Source Guide">
+  <meta name="twitter:description" content="None">
+  <meta name="twitter:image" content="assets/images/banner.png">
+  <link rel="stylesheet" href="assets/stylesheets/overrides.011ebae6.min.css">
+
   </head>
   
   
     
     
     
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -58,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-mkdocs" class="md-skip">
+        <a href="#sk" class="md-skip">
           Skip to content
         </a>
       
@@ -205,7 +237,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="getting-started/" class="md-tabs__link">
+        <a href="use/use/" class="md-tabs__link">
           Use
         </a>
       
@@ -218,7 +250,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="setup/changing-the-colors.md" class="md-tabs__link">
+        <a href="contribute/contribute/" class="md-tabs__link">
           Contribute
         </a>
       
@@ -231,21 +263,8 @@
   
     <li class="md-tabs__item">
       
-        <a href="reference/admonitions.md" class="md-tabs__link">
+        <a href="open/open/" class="md-tabs__link">
           Open
-        </a>
-      
-    </li>
-  
-
-      
-        
-  
-  
-    <li class="md-tabs__item">
-      
-        <a href="changelog/" class="md-tabs__link">
-          Tools
         </a>
       
     </li>
@@ -369,15 +388,49 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#_1" class="md-nav__link">
+    들어가며
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#_2" class="md-nav__link">
+    가이드 구성
+  </a>
+  
+    <nav class="md-nav" aria-label="가이드 구성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    오픈소스 사용하기
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    오픈소스 기여하기
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    오픈소스 공개하기
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    참고자료
   </a>
   
 </li>
@@ -420,8 +473,8 @@
 
 
   <li class="md-nav__item">
-    <a href="getting-started/" title="Installation" class="md-nav__link">
-      Installation
+    <a href="use/use/" title="오픈소스 사용하기" class="md-nav__link">
+      오픈소스 사용하기
     </a>
   </li>
 
@@ -432,80 +485,8 @@
 
 
   <li class="md-nav__item">
-    <a href="creating-your-site/" title="Creating your site" class="md-nav__link">
-      Creating your site
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="publishing-your-site/" title="Publishing your site" class="md-nav__link">
-      Publishing your site
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="customization/" title="Customization" class="md-nav__link">
-      Customization
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="troubleshooting/" title="Troubleshooting" class="md-nav__link">
-      Troubleshooting
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="data-privacy/" title="Data privacy" class="md-nav__link">
-      Data privacy
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="insiders/" title="Insiders" class="md-nav__link">
-      Insiders
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="license/" title="License" class="md-nav__link">
-      License
+    <a href="use/opensourcelicense/" title="오픈소스 라이선스" class="md-nav__link">
+      오픈소스 라이선스
     </a>
   </li>
 
@@ -546,8 +527,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/changing-the-colors.md" title="Changing the colors" class="md-nav__link">
-      Changing the colors
+    <a href="contribute/contribute/" title="오픈소스 기여하기" class="md-nav__link">
+      오픈소스 기여하기
     </a>
   </li>
 
@@ -558,8 +539,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/changing-the-fonts.md" title="Changing the fonts" class="md-nav__link">
-      Changing the fonts
+    <a href="contribute/why/" title="기여해야 하는 이유" class="md-nav__link">
+      기여해야 하는 이유
     </a>
   </li>
 
@@ -570,8 +551,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/changing-the-language.md" title="Changing the language" class="md-nav__link">
-      Changing the language
+    <a href="contribute/type/" title="기여 유형" class="md-nav__link">
+      기여 유형
     </a>
   </li>
 
@@ -582,8 +563,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/changing-the-logo-and-icons.md" title="Changing the logo and icons" class="md-nav__link">
-      Changing the logo and icons
+    <a href="contribute/governance/" title="거버넌스 구조" class="md-nav__link">
+      거버넌스 구조
     </a>
   </li>
 
@@ -594,8 +575,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/setting-up-navigation.md" title="Setting up navigation" class="md-nav__link">
-      Setting up navigation
+    <a href="contribute/good/" title="좋은 기여자" class="md-nav__link">
+      좋은 기여자
     </a>
   </li>
 
@@ -606,8 +587,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/setting-up-site-search.md" title="Setting up site search" class="md-nav__link">
-      Setting up site search
+    <a href="contribute/check/" title="프로젝트 확인 방법" class="md-nav__link">
+      프로젝트 확인 방법
     </a>
   </li>
 
@@ -618,8 +599,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/setting-up-site-analytics.md" title="Setting up site analytics" class="md-nav__link">
-      Setting up site analytics
+    <a href="contribute/submit/" title="기여 제출 세부 방법" class="md-nav__link">
+      기여 제출 세부 방법
     </a>
   </li>
 
@@ -630,32 +611,8 @@
 
 
   <li class="md-nav__item">
-    <a href="setup/adding-social-links.md" title="Adding social links" class="md-nav__link">
-      Adding social links
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="setup/adding-a-git-repository.md" title="Adding a git repository" class="md-nav__link">
-      Adding a git repository
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="setup/adding-a-comment-system.md" title="Adding a comment system" class="md-nav__link">
-      Adding a comment system
+    <a href="contribute/communicate/" title="커뮤니케이션" class="md-nav__link">
+      커뮤니케이션
     </a>
   </li>
 
@@ -696,8 +653,8 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/admonitions.md" title="Admonitions" class="md-nav__link">
-      Admonitions
+    <a href="open/open/" title="오픈소스 공개하기" class="md-nav__link">
+      오픈소스 공개하기
     </a>
   </li>
 
@@ -708,8 +665,8 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/buttons.md" title="Buttons" class="md-nav__link">
-      Buttons
+    <a href="open/why/" title="공개 목적" class="md-nav__link">
+      공개 목적
     </a>
   </li>
 
@@ -720,8 +677,8 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/code-blocks.md" title="Code blocks" class="md-nav__link">
-      Code blocks
+    <a href="open/name/" title="프로젝트 이름" class="md-nav__link">
+      프로젝트 이름
     </a>
   </li>
 
@@ -732,8 +689,8 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/content-tabs.md" title="Content tabs" class="md-nav__link">
-      Content tabs
+    <a href="open/prepare/" title="공개할 코드 준비" class="md-nav__link">
+      공개할 코드 준비
     </a>
   </li>
 
@@ -744,8 +701,8 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/data-tables.md" title="Data tables" class="md-nav__link">
-      Data tables
+    <a href="open/copyright/" title="저작권 및 라이선스 표시" class="md-nav__link">
+      저작권 및 라이선스 표시
     </a>
   </li>
 
@@ -756,146 +713,8 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/footnotes.md" title="Footnotes" class="md-nav__link">
-      Footnotes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="reference/formatting.md" title="Formatting" class="md-nav__link">
-      Formatting
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="reference/icons-emojis.md" title="Icons + Emojis" class="md-nav__link">
-      Icons + Emojis
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="reference/images.md" title="Images" class="md-nav__link">
-      Images
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="reference/lists.md" title="Lists" class="md-nav__link">
-      Lists
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="reference/mathjax.md" title="MathJax" class="md-nav__link">
-      MathJax
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="reference/meta-tags.md" title="Meta tags" class="md-nav__link">
-      Meta tags
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-    
-    <label class="md-nav__link" for="nav-5">
-      Tools
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
-    </label>
-    <nav class="md-nav" aria-label="Tools" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
-        Tools
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="changelog/" title="Release notes" class="md-nav__link">
-      Release notes
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="upgrading/" title="Upgrading" class="md-nav__link">
-      Upgrading
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="deprecations/" title="Deprecations" class="md-nav__link">
-      Deprecations
+    <a href="open/cla/" title="CLA" class="md-nav__link">
+      CLA
     </a>
   </li>
 
@@ -931,15 +750,49 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    Commands
+  <a href="#_1" class="md-nav__link">
+    들어가며
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    Project layout
+  <a href="#_2" class="md-nav__link">
+    가이드 구성
+  </a>
+  
+    <nav class="md-nav" aria-label="가이드 구성">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    오픈소스 사용하기
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    오픈소스 기여하기
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    오픈소스 공개하기
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    참고자료
   </a>
   
 </li>
@@ -960,21 +813,39 @@
                   
                 
                 
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+                <h1 id="sk">SK텔레콤 오픈소스 가이드<a class="headerlink" href="#sk" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>오픈소스의 개방과 공유의 정신에 따라 SK텔레콤은 내부 구성원들을 위한 오픈소스 가이드를 누구나 활용할 수 있도록 공개하였습니다. (단, 사내 시스템 Website Link 등 일부 내용은 제외하였습니다.)</p>
+</div>
+<h2 id="_1">들어가며<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p><code>"If software is eating the world, open source is eating the software world."</code></p>
+<p>오픈소스가 소프트웨어 세상의 핵심이 되었다는 건 이제 설명하지 않아도 되는 너무나 당연한 사실입니다.</p>
+<p>SK텔레콤은 대부분의 서비스에서 이미 많은 오픈소스를 사용하고 있습니다. 이에 그치지 않고 SK텔레콤은 다수의 오픈소스 프로젝트에 기여하고, 또 주요 소프트웨어를 오픈소스로 공개하고 있습니다. 이는 오픈소스가 소프트웨어 개발 문화를 혁신하는 훌륭한 도구임을 분명히 인식하고, 오픈소스 커뮤니티에 적극 참여하였을 때 오픈소스로부터 최대의 가치를 창출할 수 있다는 믿음 때문입니다. </p>
+<p>SK텔레콤 <strong>OSPO</strong>(Open Source Program Office, 2020년 8월 기준, T3K Product Strategy Hub)는 구성원들이 올바르게 오픈소스를 사용하고, 기여할 뿐만 아니라 SK텔레콤의 소프트웨어를 오픈소스로 공개하기 위한 가이드를 제공합니다.</p>
+<h2 id="_2">가이드 구성<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>이 가이드는 다음 세가지 주제로 구성됩니다.</p>
+<h3 id="_3"><a href="use/use/"><mark><strong>오픈소스 사용하기</strong></mark></a><a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></svg></span> 오픈소스를 SK텔레콤의 제품이나 서비스에 사용하는 방법과 주의해야 할 사항을 설명합니다.</p>
+<h3 id="_4"><a href="contribute/contribute/"><mark><strong>오픈소스 기여하기</strong></mark></a><a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></svg></span> 외부 오픈소스 프로젝트에 SK텔레콤 구성원이 작성한 코드를 기여하는 방법과 절차를 설명합니다.</p>
+<h3 id="_5"><a href="open/open/"><mark><strong>오픈소스 공개하기</strong></mark></a><a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7L9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59 21 7z"/></svg></span> SK텔레콤 구성원이 개발한 소프트웨어를 오픈소스로 공개하는 방법과 절차를 설명합니다.</p>
+<h2 id="_6">참고자료<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>이 문서는 다음 자료들을 참고하여 작성하였습니다.
+</code></pre></div>
+
+<div class="admonition info">
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li>TODO Guides : <a href="https://todogroup.org/guides/">https://todogroup.org/guides/</a></li>
+<li>GitHub Guide : <a href="https://opensource.guide/">https://opensource.guide/</a></li>
+<li>Google Open Source Docs : <a href="https://opensource.google/docs/">https://opensource.google/docs/</a></li>
+<li>Verizon Media Open Source Developer Guide : <a href="https://verizonmedia.github.io/oss-guide/">https://verizonmedia.github.io/oss-guide/</a></li>
+<li>오픈소스 소프트웨어 라이선스 가이드 : <a href="https://www.olis.or.kr/license/licenseGuide.do">https://www.olis.or.kr/license/licenseGuide.do</a></li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+</div>
+                
+                  
                 
               
               
@@ -994,13 +865,13 @@ docs/
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
         
-          <a href="getting-started/" title="Installation" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="use/use/" title="오픈소스 사용하기" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Installation
+                오픈소스 사용하기
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1015,10 +886,10 @@ docs/
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        Made with
+        <!--Made with
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
           Material for MkDocs
-        </a>
+        </a>-->
       </div>
       
     </div>

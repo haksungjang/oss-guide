@@ -1,0 +1,925 @@
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/favicon-sk.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
+    
+    
+      
+        <title>프로젝트 확인 방법 - Open Source Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.062add1f.min.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.2c2767bb.min.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#000000">
+      
+    
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,400,400i,700%7CNanum+Gothic+Coding&display=fallback">
+        <style>body,input{font-family:"Nanum Gothic",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Nanum Gothic Coding",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+    
+  
+      
+    
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.body.addEventListener("click", ev => {
+        if (ev.target instanceof HTMLElement) {
+          var el = ev.target.closest("a[href^=http]")
+          if (el)
+            ga("send", "event", "outbound", "click", el.href)
+        }
+      })
+    })
+  </script>
+
+    
+  
+  
+    
+  
+  
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Open Source Guide - 프로젝트 확인 방법">
+  <meta property="og:description" content="None">
+  <meta property="og:url" content="None">
+  <meta property="og:image" content="assets/images/banner.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@squidfunk">
+  <meta name="twitter:creator" content="@squidfunk">
+  <meta name="twitter:title" content="Open Source Guide - 프로젝트 확인 방법">
+  <meta name="twitter:description" content="None">
+  <meta name="twitter:image" content="assets/images/banner.png">
+  <link rel="stylesheet" href="../../assets/stylesheets/overrides.011ebae6.min.css">
+
+  </head>
+  
+  
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="Open Source Guide" class="md-header-nav__button md-logo" aria-label="Open Source Guide">
+      
+  
+  <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="162.895px" height="127.452px" viewBox="0 0 162.895 127.452" enable-background="new 0 0 162.895 127.452"
+	 xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="#E1002A" d="M23.969,93.54c-4.53-2.118-8.25-3.829-8.25-7.291c0-2.646,2.117-4.571,6.3-4.571
+				c1.539,0,2.797,0.182,4.097,0.42c0.68,0.117,1.406,0.217,2.005,0.217c3.653,0,5.715-2.178,7.086-6.312l0.567-1.688
+				c-0.583-0.238-6.552-2.859-14.335-2.859c-12.382,0-18.918,7.941-18.914,16.179c0,4.157,1.301,7.167,3.338,9.54
+				c2.624,3.051,6.366,5.048,9.867,6.755c5.101,2.503,9.705,4.353,9.705,8.063c0.003,3.291-3.399,5.164-7.947,5.164
+				c-6.231,0-11.676-3.562-12.372-3.991L0,122.755c0.91,0.514,7.499,4.697,18.343,4.697c11.555-0.008,20.305-6.632,20.305-16.826
+				C38.647,100.483,30.537,96.723,23.969,93.54z"/>
+			<path fill="#E1002A" d="M69.165,98.276l20.961-25.7H75.191L58.473,94.754h-0.25V72.576H45.914l0.003,54.441h0.732
+				c5.322,0,11.657-2.462,11.657-11.353v-12.499h0.25l17.042,23.174h15.665L69.165,98.276z"/>
+		</g>
+		<g>
+			<path fill="#E1002A" d="M90.824,14.26c-4.334,0.818-10.76,4.752-10.739,11.709c0.017,6.317,5.182,10.146,5.198,18.424
+				c0.025,6.228-3.407,10.421-7.119,12.746c1.5-0.133,3.143-0.219,4.951-0.223c3.792-0.01,6.078,0.352,6.22,0.375l19.443-23.859
+				C103.378,25.348,97.072,19.075,90.824,14.26z"/>
+			<path fill="#E1002A" d="M107.156,78.69c2.451-3.81,2.758-9.882,2.966-16.067c0.229-5.769,1.433-10.11,9.151-10.137
+				c1.71-0.006,3.339,0.229,6.289,0.221c11.306-0.05,18.688-3.943,23.28-6.498c-9.382-5.982-23.076-12.09-40.065-12.777
+				c-1.107,3.123-9.717,27.063-10.368,28.995c0.098,0.116,1.606,1.806,3.489,5.102C104.676,72.056,106.167,75.891,107.156,78.69z"/>
+		</g>
+	</g>
+	<g>
+		<path fill="#EE7602" d="M66.089,59.136c-0.983,0.006-1.472-0.647-1.605-1.78c-0.125-1.125-4.988-45.612-5.712-52.345
+			c-0.105-0.983-0.349-2.788-0.352-3.431C58.418,0.543,59.093,0.002,59.889,0c2.304-0.009,14.86,2.932,28.185,12.271
+			c-3.839,1.083-10.784,5.076-10.752,13.344c0.025,7.318,5.265,11.346,5.292,18.688C82.654,56.243,68.931,59.131,66.089,59.136z"/>
+		<path fill="#EE7602" d="M108.273,81.865c0.209,0.554,0.406,1.02,0.604,1.346c0.306,0.52,0.705,0.756,1.195,0.754
+			c0.31-0.004,0.69-0.107,1.11-0.297c1.027-0.472,41.626-19.372,47.749-22.197c0.888-0.426,2.57-1.178,3.125-1.503
+			c0.575-0.327,0.838-0.806,0.838-1.292c-0.002-0.272-0.082-0.547-0.236-0.797c-0.765-1.238-4.693-5.407-11.26-9.963
+			c-5.215,2.871-13.357,7.311-25.469,7.36c-2.968,0.003-3.64-0.196-5.667-0.188c-5.913,0.021-7.389,2.55-7.605,7.733
+			c-0.036,0.979-0.053,2.297-0.11,3.742C112.36,71.197,111.813,77.588,108.273,81.865z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            Open Source Guide
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              프로젝트 확인 방법
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/sktelecom/oss-guide" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sktelecom/oss-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+        
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  <li class="md-tabs__item">
+    
+      <a href="../.." class="md-tabs__link">
+        Home
+      </a>
+    
+  </li>
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../use/use/" class="md-tabs__link">
+          Use
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../contribute/" class="md-tabs__link md-tabs__link--active">
+          Contribute
+        </a>
+      
+    </li>
+  
+
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../open/open/" class="md-tabs__link">
+          Open
+        </a>
+      
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Open Source Guide" class="md-nav__button md-logo" aria-label="Open Source Guide">
+      
+  
+  <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="162.895px" height="127.452px" viewBox="0 0 162.895 127.452" enable-background="new 0 0 162.895 127.452"
+	 xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="#E1002A" d="M23.969,93.54c-4.53-2.118-8.25-3.829-8.25-7.291c0-2.646,2.117-4.571,6.3-4.571
+				c1.539,0,2.797,0.182,4.097,0.42c0.68,0.117,1.406,0.217,2.005,0.217c3.653,0,5.715-2.178,7.086-6.312l0.567-1.688
+				c-0.583-0.238-6.552-2.859-14.335-2.859c-12.382,0-18.918,7.941-18.914,16.179c0,4.157,1.301,7.167,3.338,9.54
+				c2.624,3.051,6.366,5.048,9.867,6.755c5.101,2.503,9.705,4.353,9.705,8.063c0.003,3.291-3.399,5.164-7.947,5.164
+				c-6.231,0-11.676-3.562-12.372-3.991L0,122.755c0.91,0.514,7.499,4.697,18.343,4.697c11.555-0.008,20.305-6.632,20.305-16.826
+				C38.647,100.483,30.537,96.723,23.969,93.54z"/>
+			<path fill="#E1002A" d="M69.165,98.276l20.961-25.7H75.191L58.473,94.754h-0.25V72.576H45.914l0.003,54.441h0.732
+				c5.322,0,11.657-2.462,11.657-11.353v-12.499h0.25l17.042,23.174h15.665L69.165,98.276z"/>
+		</g>
+		<g>
+			<path fill="#E1002A" d="M90.824,14.26c-4.334,0.818-10.76,4.752-10.739,11.709c0.017,6.317,5.182,10.146,5.198,18.424
+				c0.025,6.228-3.407,10.421-7.119,12.746c1.5-0.133,3.143-0.219,4.951-0.223c3.792-0.01,6.078,0.352,6.22,0.375l19.443-23.859
+				C103.378,25.348,97.072,19.075,90.824,14.26z"/>
+			<path fill="#E1002A" d="M107.156,78.69c2.451-3.81,2.758-9.882,2.966-16.067c0.229-5.769,1.433-10.11,9.151-10.137
+				c1.71-0.006,3.339,0.229,6.289,0.221c11.306-0.05,18.688-3.943,23.28-6.498c-9.382-5.982-23.076-12.09-40.065-12.777
+				c-1.107,3.123-9.717,27.063-10.368,28.995c0.098,0.116,1.606,1.806,3.489,5.102C104.676,72.056,106.167,75.891,107.156,78.69z"/>
+		</g>
+	</g>
+	<g>
+		<path fill="#EE7602" d="M66.089,59.136c-0.983,0.006-1.472-0.647-1.605-1.78c-0.125-1.125-4.988-45.612-5.712-52.345
+			c-0.105-0.983-0.349-2.788-0.352-3.431C58.418,0.543,59.093,0.002,59.889,0c2.304-0.009,14.86,2.932,28.185,12.271
+			c-3.839,1.083-10.784,5.076-10.752,13.344c0.025,7.318,5.265,11.346,5.292,18.688C82.654,56.243,68.931,59.131,66.089,59.136z"/>
+		<path fill="#EE7602" d="M108.273,81.865c0.209,0.554,0.406,1.02,0.604,1.346c0.306,0.52,0.705,0.756,1.195,0.754
+			c0.31-0.004,0.69-0.107,1.11-0.297c1.027-0.472,41.626-19.372,47.749-22.197c0.888-0.426,2.57-1.178,3.125-1.503
+			c0.575-0.327,0.838-0.806,0.838-1.292c-0.002-0.272-0.082-0.547-0.236-0.797c-0.765-1.238-4.693-5.407-11.26-9.963
+			c-5.215,2.871-13.357,7.311-25.469,7.36c-2.968,0.003-3.64-0.196-5.667-0.188c-5.913,0.021-7.389,2.55-7.605,7.733
+			c-0.036,0.979-0.053,2.297-0.11,3.742C112.36,71.197,111.813,77.588,108.273,81.865z"/>
+	</g>
+</g>
+</svg>
+
+    </a>
+    Open Source Guide
+  </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/sktelecom/oss-guide" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sktelecom/oss-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Use
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Use" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Use
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../use/use/" title="오픈소스 사용하기" class="md-nav__link">
+      오픈소스 사용하기
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../use/opensourcelicense/" title="오픈소스 라이선스" class="md-nav__link">
+      오픈소스 라이선스
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Contribute
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Contribute" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Contribute
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../contribute/" title="오픈소스 기여하기" class="md-nav__link">
+      오픈소스 기여하기
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../why/" title="기여해야 하는 이유" class="md-nav__link">
+      기여해야 하는 이유
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../type/" title="기여 유형" class="md-nav__link">
+      기여 유형
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../governance/" title="거버넌스 구조" class="md-nav__link">
+      거버넌스 구조
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../good/" title="좋은 기여자" class="md-nav__link">
+      좋은 기여자
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        프로젝트 확인 방법
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="프로젝트 확인 방법" class="md-nav__link md-nav__link--active">
+      프로젝트 확인 방법
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    오픈소스 프로젝트인가요?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    프로젝트가 활발히 기여를 받고 있나요?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    프로젝트 이슈를 확인하세요.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-request" class="md-nav__link">
+    프로젝트의 Pull Request를 확인하세요.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    프로젝트가 기여를 환영하는 분위기 인가요?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../submit/" title="기여 제출 세부 방법" class="md-nav__link">
+      기여 제출 세부 방법
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../communicate/" title="커뮤니케이션" class="md-nav__link">
+      커뮤니케이션
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Open
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Open" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Open
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open/open/" title="오픈소스 공개하기" class="md-nav__link">
+      오픈소스 공개하기
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open/why/" title="공개 목적" class="md-nav__link">
+      공개 목적
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open/name/" title="프로젝트 이름" class="md-nav__link">
+      프로젝트 이름
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open/prepare/" title="공개할 코드 준비" class="md-nav__link">
+      공개할 코드 준비
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open/copyright/" title="저작권 및 라이선스 표시" class="md-nav__link">
+      저작권 및 라이선스 표시
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../open/cla/" title="CLA" class="md-nav__link">
+      CLA
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    오픈소스 프로젝트인가요?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    프로젝트가 활발히 기여를 받고 있나요?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    프로젝트 이슈를 확인하세요.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pull-request" class="md-nav__link">
+    프로젝트의 Pull Request를 확인하세요.
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    프로젝트가 기여를 환영하는 분위기 인가요?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  
+                
+                
+                <h1 id="_1">좋은 프로젝트 확인 방법<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>기여할 만한 프로젝트인지 먼저 확인하는 것도 필요합니다. 그렇지 않으면 수고한 기여가 아무 응답도 받지 못하고 묻혀버릴 수도 있습니다.</p>
+<p>다음은 관심 있는 오픈소스 프로젝트가 기여 활동에 적합한지 확인하기 위한 체크리스트입니다.</p>
+<h2 id="_2">오픈소스 프로젝트인가요?<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> LICENSE 파일이 있나요? 일반적으로 저장소의 루트 디렉토리 내에 LICENSE라는 파일이 있습니다.</li>
+</ul>
+<p>오픈소스 라이선스가 없는 프로젝트라면 오픈소스가 아닙니다. 소프트웨어의 저작권자가 오픈소스 라이선스를 통해 누구나 사용하고 배포할 수 있는 권리를 부여해야 기업은 그 소프트웨어를 자유롭게 사용할 수 있습니다. 오픈소스 라이선스가 없는 소프트웨어를 임의로 사용한다면 저작권 침해 등의 법적 리스크를 유발할 수 있습니다.</p>
+<h2 id="_3">프로젝트가 활발히 기여를 받고 있나요?<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 가장 최근 Commit은 언제인가요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 얼마나 많은 기여자가 있나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 얼마나 자주 Commit이 있나요?</li>
+</ul>
+<p>기여자가 거의 없거나, 최근 수년간 Commit이 없다면 관리가 되지 않고 있는 프로젝트로 볼 수 있습니다. </p>
+<p>GitHub에서의 Commit 현황은 화면 상단의 "Commits"에서 확인할 수 있습니다.</p>
+<p><img alt="" src="https://gblobscdn.gitbook.com/assets%2F-M2O4U7SpUzxqzuYehGm%2F-M2ViLC5zNevzFcXYxEu%2F-M2Vom7Z6udcwUuG-v9S%2FScreen%20Shot%202020-03-16%20at%209.43.33%20AM.png?alt=media&amp;token=3d91bb13-f930-4b42-9e65-07957d58b305" /></p>
+<h2 id="_4">프로젝트 이슈를 확인하세요.<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 얼마나 많은 이슈가 오픈되어 있나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이슈가 오픈되면 Maintainer는 신속히 대응하나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이슈에 대한 활발한 토론이 있나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이슈들은 최근 것인가요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이슈들이 Close되고 있나요?</li>
+</ul>
+<p>이슈가 오픈되지 않고 있거나, 오픈되더라도 대응이 되지 않는다면 관리가 되지 않는 프로젝트로 볼 수 있습니다.</p>
+<p>GitHub에서 Issues 페이지 내 "closed" tab을 보면 Close된 이슈 현황을 확인할 수 있습니다.</p>
+<p><img alt="" src="https://gblobscdn.gitbook.com/assets%2F-M2O4U7SpUzxqzuYehGm%2F-M2ViLC5zNevzFcXYxEu%2F-M2VpLWD4oKWkl_X6qSN%2FScreen%20Shot%202020-03-16%20at%209.53.46%20AM.png?alt=media&amp;token=14f720a9-d7f6-41e0-beca-fc7c63ece51c" /></p>
+<h2 id="pull-request">프로젝트의 Pull Request를 확인하세요.<a class="headerlink" href="#pull-request" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 얼마나 많은 Pull Request가 오픈되어 있나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pull Request가 오픈되면 Maintainer는 신속히 대응하나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pull Request에 대한 활발한 토론이 있나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pull Request들은 최근 것인가요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 얼마나 최근의 Pull Request들이 머지되었나요?</li>
+</ul>
+<p>GitHub에서 Pull Request 페이지 내 "closed" tab을 누르면 Close된 Pull Request를 볼 수 있습니다.</p>
+<p><img alt="" src="https://gblobscdn.gitbook.com/assets%2F-M2O4U7SpUzxqzuYehGm%2F-M2VpUNM_B00mqRG0eFI%2F-M2Vramk1g9F_bzFeufT%2FScreen%20Shot%202020-03-16%20at%2010.03.44%20AM.png?alt=media&amp;token=056fe80b-1f99-465d-afd2-b30096f07a53" /></p>
+<h2 id="_5">프로젝트가 기여를 환영하는 분위기 인가요?<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<ul class="task-list">
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이슈 관련 질문에 대해 Maintainer가 도움이 되는 답변을 하나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 이슈, 포럼, 채팅 (슬랙 등)에서 사람들이 친절한가요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Pull Request를 하면 Review가 진행되나요?</li>
+<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Maintainer가 사람들의 기여에 감사 표시를 하나요?</li>
+</ul>
+<p>기여를 환영하지 않는 분위기인 프로젝트는 장기적으로 발전하기가 어렵습니다. 이런 부분도 내가 기여할 만한 가치가 있는 프로젝트인지를 판단하는 기준이 될 수 있습니다.</p>
+                
+                  
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../good/" title="좋은 기여자" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                좋은 기여자
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../submit/" title="기여 제출 세부 방법" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                기여 제출 세부 방법
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        <!--Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>-->
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.d1f5a259.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b7ed72fe.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: ["tabs"],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.fae956e7.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>
